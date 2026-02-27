@@ -12,9 +12,9 @@ def main():
     technician = StaffMember("James Carter", "Maintenance Technician")
 
     # Subscribing staff to machines
-    cutter.subscribe(supervisor)
-    cutter.subscribe(technician)
-    packer.subscribe(technician)
+    cutter.attach(supervisor)
+    cutter.attach(technician)
+    packer.attach(technician)
 
     # Simulating state changes
     cutter.change_state("PRODUCING")

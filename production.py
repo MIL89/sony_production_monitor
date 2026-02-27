@@ -7,7 +7,7 @@ class Machine:
         self._current_state = "IDLE"  # default state
         self._subscribers = []  # employees observing this machine
 
-    def subscribe(self, staff_member):
+    def attach(self, staff_member):
         # Add staff if not already subscribed
         if staff_member not in self._subscribers:
             self._subscribers.append(staff_member)

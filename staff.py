@@ -3,7 +3,7 @@ class StaffMember:
         self.name = name
         self.position = position
 
-    def receive_update(self, machine_name, state):
+    def update(self, machine_name, state):
         print(
             f"{self.position} {self.name} "
             f"has been notified that '{machine_name}' "

@@ -32,7 +32,7 @@ class Machine:
     def _notify_staff(self):
         # Inform all subscribed staff members
         for staff in self._subscribers:
-            staff.receive_update(self.machine_name, self._current_state)
+            staff.update(self.machine_name, self._current_state)
 
     def get_state(self):
         return self._current_state
